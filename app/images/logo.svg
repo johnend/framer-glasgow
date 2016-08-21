@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="387px" height="410px" viewBox="0 0 387 410" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#53A0FE" offset="0%"></stop>
+            <stop stop-color="#3023AE" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="34.3503625" y="34.3503625" width="290" height="290" rx="15"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <radialGradient cx="50%" cy="28.3992676%" fx="50%" fy="28.3992676%" r="93.7972918%" id="radialGradient-5">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#E0E0E0" offset="100%"></stop>
+        </radialGradient>
+        <rect id="path-6" x="0" y="0" width="290" height="290" rx="15"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="50%" id="linearGradient-8">
+            <stop stop-color="#EEA3F2" offset="0%"></stop>
+            <stop stop-color="#D969E1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="50%" id="linearGradient-9">
+            <stop stop-color="#B8FFC9" offset="0%"></stop>
+            <stop stop-color="#82FF98" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="100%" x2="5.30910579%" y2="0%" id="linearGradient-10">
+            <stop stop-color="#30702D" offset="0%"></stop>
+            <stop stop-color="#153D14" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="website" transform="translate(-482.000000, -61.000000)">
+            <g id="logo" transform="translate(459.000000, 31.000000)">
+                <rect id="bounds" x="0" y="0" width="462" height="462"></rect>
+                <g id="Group" transform="translate(215.500000, 241.500000) rotate(-10.000000) translate(-215.500000, -241.500000) translate(36.000000, 58.000000)">
+                    <g id="bottomLayer" transform="translate(0.000000, 8.000000)">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <g id="Rectangle-4" transform="translate(179.350363, 179.350363) rotate(-16.000000) translate(-179.350363, -179.350363) ">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-2"></use>
+                            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        </g>
+                        <path d="M167.466313,138.670454 L2.96781921,94.533289 L27.3392162,176.000002 L111.746665,198.463191 L51.8532431,262.734802 L74.4062712,343.668778 L190.631374,219.456623 L355.018265,263.204584 L331.255844,182.617395 L246.404577,159.850656 L306.082476,96.0716583 L283.579813,14.0690947 L167.466313,138.670454 Z" id="Combined-Shape" fill-opacity="0.75" fill="#FFFFFF" mask="url(#mask-3)"></path>
+                    </g>
+                    <g id="topLayer" transform="translate(66.000000, 0.000000)">
+                        <g id="Rectangle-4">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                            <use fill="url(#radialGradient-5)" fill-rule="evenodd" xlink:href="#path-6"></use>
+                        </g>
+                        <g id="framer" transform="translate(71.000000, 33.000000)">
+                            <polygon id="Rectangle" fill="url(#linearGradient-8)" points="0 0 149 0 149 75 74.5 75"></polygon>
+                            <polygon id="Rectangle-Copy" fill="url(#linearGradient-9)" points="0 75 74.5 75 149 150 0 150"></polygon>
+                            <polygon id="Rectangle-Copy-2" fill="url(#linearGradient-10)" points="0 150 75 150 75 225"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

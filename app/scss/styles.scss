@@ -1,5 +1,53 @@
 /* styles.css */
 
-h1 {
-    color: blue;
+$white: #ffffff;
+$grey: #636363;
+$orchid: #D966E1;
+$faded-lime: #80FF97;
+$palm-leaf: #153D13;
+$congress-blue: #03408B;
+$body-fonts: 'Josefin Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+$display-fonts: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+body {
+    font-family: $body-fonts;
+}
+
+header {
+    background-color: $congress-blue;
+    font-family: $display-fonts;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+nav >  ul > li {
+    list-style: none;
+    text-decoration: none;
+    padding: 25px 15px;
+    width: 120px;
+}
+
+.menu-item > a {
+  text-decoration: none;
+  color: white;
+  &:hover {
+    color: $faded-lime;
+  }
+  &.active { //this needs additional js to work
+    color: $grey;
+  }
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo {
+    width: 150px;
 }
