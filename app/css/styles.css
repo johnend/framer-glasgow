@@ -1,9 +1,17 @@
+@charset "UTF-8";
 /* styles.css */
 body {
   font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
+h1 {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  font-weight: 200;
+  color: #ffffff; }
+
 header {
-  background-color: #03408B;
+  background: linear-gradient(rgba(2, 18, 137, 0.95), rgba(2, 18, 137, 0.95)), url("../images/scotland.jpg");
+  background-size: cover;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 nav > ul {
@@ -15,7 +23,7 @@ nav > ul > li {
   list-style: none;
   text-decoration: none;
   padding: 25px 15px;
-  width: 120px; }
+  width: 125px; }
 
 .menu-item > a {
   text-decoration: none;
@@ -25,10 +33,33 @@ nav > ul > li {
   .menu-item > a.active {
     color: #636363; }
 
-.hero {
+.hero, .info-buttons {
   display: flex;
   flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center; }
 
-.logo {
-  width: 150px; }
+.hero {
+  height: 500px; }
+
+.logo, h1 {
+  flex: 1 100%;
+  display: flex;
+  justify-content: center; }
+
+.info-buttons {
+  flex: 1 100%; }
+
+.logo > object {
+  width: 150px;
+  height: 150px;
+  margin-top: 100px; }
+
+button {
+  height: 45px;
+  width: 200px;
+  border-radius: 7px;
+  border: none;
+  background-color: #80FF97;
+  box-shadow: 0 5px 0   #153D13;
+  margin: 0 5px; }

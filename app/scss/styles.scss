@@ -5,16 +5,30 @@ $grey: #636363;
 $orchid: #D966E1;
 $faded-lime: #80FF97;
 $palm-leaf: #153D13;
-$congress-blue: #03408B;
+$congress-blue: rgba(2, 18, 137, 0.95);
 $body-fonts: 'Josefin Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
 $display-fonts: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$title-size: 3em;
+$title-weight: 200;
 
+@mixin title($display-fonts, $white, $title-size, $title-weight){
+    font-family: $display-fonts;
+    font-size: $title-size;
+    font-weight: $title-weight;
+    color: $white;
+}
+    
 body {
     font-family: $body-fonts;
 }
 
+h1 {
+    @include title($display-fonts, $white, $title-size, $title-weight)
+}
+
 header {
-    background-color: $congress-blue;
+    background: linear-gradient($congress-blue, $congress-blue), url("../images/scotland.jpg");
+    background-size: cover;
     font-family: $display-fonts;
 }
 
@@ -28,7 +42,7 @@ nav >  ul > li {
     list-style: none;
     text-decoration: none;
     padding: 25px 15px;
-    width: 120px;
+    width: 125px;
 }
 
 .menu-item > a {
@@ -42,12 +56,39 @@ nav >  ul > li {
   }
 }
 
-.hero {
+.hero, .info-buttons {
     display: flex;
     flex-direction: row;
+    flex-flow: row wrap;
     justify-content: center;
 }
 
-.logo {
+.hero {
+    height: 500px;
+}
+
+.logo, h1 {
+    flex: 1 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.info-buttons {
+    flex: 1 100%;
+}
+
+.logo > object {
     width: 150px;
+    height: 150px;
+    margin-top: 100px
+}
+
+button {
+    height: 45px;
+    width: 200px;
+    border-radius: 7px;
+    border: none;
+    background-color: $faded-lime;
+    box-shadow: 0 5px 0 $palm-leaf;
+    margin: 0 5px;
 }

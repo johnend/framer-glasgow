@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var coffee = require('gulp-coffee');
 var browserSync = require('browser-sync').create();
 
 
@@ -20,7 +21,15 @@ gulp.task('browserSync', function () {
     });
 });
 
-gulp.task('watch', ['sass', 'browserSync'], function() {
+gulp.task('coffee', function () {
+    gulp.src('app/coffee/*.coffee')
+        .pipe(coffee({bare:true}))
+            // .on('error', gutil.log))
+        .pipe(gulp.dest('app/js'));
+});
+
+gulp.task('watch', ['sass', 'coffee', 'browserSync'], function() {
+   gulp.watch('app/coffee/*.coffee', ['coffee']);
    gulp.watch('app/scss/*.scss', ['sass']);
    gulp.watch('app/**/*.html', browserSync.reload);
    gulp.watch('app/js/**/*.js', browserSync.reload);
