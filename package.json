@@ -18,8 +18,14 @@
   "homepage": "https://github.com/johnend/framer-glasgow#readme",
   "devDependencies": {
     "browser-sync": "^2.14.0",
+    "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-coffee": "^2.3.2",
-    "gulp-sass": "^2.3.2"
+    "gulp-cssnano": "^2.1.2",
+    "gulp-if": "^2.0.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.1.0",
+    "run-sequence": "^1.2.2"
   }
 }

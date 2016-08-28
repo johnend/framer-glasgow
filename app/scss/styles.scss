@@ -6,6 +6,8 @@ $orchid: #D966E1;
 $faded-lime: #80FF97;
 $palm-leaf: #153D13;
 $congress-blue: rgba(2, 18, 137, 0.95);
+$transparent: rgba(0,0,0,0);
+
 $body-fonts: 'Josefin Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
 $display-fonts: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $title-size: 3em;
@@ -20,6 +22,7 @@ $title-weight: 200;
     
 body {
     font-family: $body-fonts;
+    color: $congress-blue;
 }
 
 h1 {
@@ -27,7 +30,7 @@ h1 {
 }
 
 header {
-    background: linear-gradient($congress-blue, $congress-blue), url("../images/scotland.jpg");
+    background: linear-gradient($congress-blue, $congress-blue), url("../images/scotland.png");
     background-size: cover;
     font-family: $display-fonts;
 }
@@ -89,6 +92,36 @@ button {
     border-radius: 7px;
     border: none;
     background-color: $faded-lime;
-    box-shadow: 0 5px 0 $palm-leaf;
-    margin: 0 5px;
+    box-shadow: 0 5px 0 darken($faded-lime, 50%);
+    margin: 0 15px;
+    color: $congress-blue;
+    font-family: $body-fonts;
+    font-size: 1em;
+    &.secondary {
+        background-color: $transparent;
+        border: 1px solid darken($faded-lime, 25%);
+        color: $white;
+    }
+    &:active {
+        box-shadow: none;
+        transform: translateY(5px);
+    }    
+    &:visited {
+        box-shadow: none;
+        transform: translateY(5px);
+    }
+
+}
+
+.when {
+    background: $white;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    h2 {
+        flex: 1 100%;
+    }
+    div {
+        display: flex;
+    }
 }

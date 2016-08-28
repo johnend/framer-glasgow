@@ -1,0 +1,432 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-weight: "
+			],
+			[
+				"margin",
+				"margin-top: "
+			],
+			[
+				"fle",
+				"flex-flow: "
+			],
+			[
+				"displa",
+				"display-fonts"
+			],
+			[
+				"back",
+				"background-color: "
+			],
+			[
+				"app",
+				"app"
+			],
+			[
+				"browsersyn",
+				"browser-sync"
+			],
+			[
+				"br",
+				"browserSync"
+			],
+			[
+				"p",
+				"purple"
+			],
+			[
+				"title",
+				"title-font"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"ope",
+				"open_automatically"
+			],
+			[
+				"com",
+				"com-basic	Idiomatic CSS - Basic Comment"
+			],
+			[
+				"su",
+				"suggestion"
+			],
+			[
+				"dragg",
+				"dragging"
+			],
+			[
+				"Drag",
+				"DragEnd"
+			],
+			[
+				"de",
+				"deSelectPro"
+			],
+			[
+				"se",
+				"selectPro"
+			],
+			[
+				"profile",
+				"profile2"
+			],
+			[
+				"task",
+				"taskCompleted"
+			],
+			[
+				"bin",
+				"bindTaskEvents"
+			],
+			[
+				"in",
+				"incompleteTaskHolder"
+			],
+			[
+				"compl",
+				"completed-tasks"
+			],
+			[
+				"incomple",
+				"incomplete-tasks"
+			],
+			[
+				"get",
+				"getElementById"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "inst",
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript Next"
+			],
+			[
+				"pack ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"comp",
+				"Coffee: Compile File"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"j",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"extr",
+				"PackageResourceViewer: Extract Package"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"brows",
+				"Preferences: Browse Packages"
+			],
+			[
+				"default",
+				"Preferences: Settings - Default"
+			],
+			[
+				"setting",
+				"Preferences: Settings - User"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"instll",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 503.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"dragging",
+			"console.log(dragging)",
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/john/Developer/framer-glasgow/app/index.html",
+		"/Users/john/Developer/framer-glasgow/app/css/styles.css",
+		"/Users/john/Developer/framer-glasgow/.git/COMMIT_EDITMSG",
+		"/Users/john/.zshrc",
+		"/Users/john/Developer/framer-glasgow/app/scss/styles.scss",
+		"/Users/john/Developer/framer-glasgow/app/scss/print.scss",
+		"/Users/john/Developer/framer-glasgow/app/css/print.css",
+		"/Users/john/Developer/framer-glasgow/app/scss/reset.scss",
+		"/Users/john/Developer/framer-glasgow/package.json",
+		"/Users/john/Developer/framer-glasgow/.gitignore",
+		"/Users/john/Developer/framer-glasgow/.git/config",
+		"/Users/john/Developer/framer-glasgow/index.js",
+		"/Users/john/Developer/johnenderby.com/gulpfile.js",
+		"/Users/john/.ssh/pwd",
+		"/Users/john/.bashrc",
+		"/Users/john/.bash_profile",
+		"/usr/local/Library/Taps/homebrew/homebrew-core/Formula/libxml2.rb",
+		"/usr/local/Library/Homebrew/cmd/edit.rb",
+		"/Users/john/style.css",
+		"/Users/john/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/john/Developer/johnenderby.com/images/me.svg",
+		"/Users/john/Developer/johnenderby.com/kit/index.kit",
+		"/Users/john/Developer/johnenderby.com/css/screen.css",
+		"/Users/john/Developer/johnenderby.com/index.html",
+		"/Users/john/Developer/johnenderby.com/js/app.js",
+		"/Users/john/Developer/johnenderby.com/sass/screen.scss",
+		"/Users/john/Developer/johnenderby.com/index.kit",
+		"/Users/john/Developer/johnenderby.com/coffeeScript/app.coffee",
+		"/Users/john/Developer/johnenderby.com/index.htlm",
+		"/Users/john/Developer/johnenderby.com/js/app.coffee",
+		"/Users/john/Dropbox (Personal)/Websites/johnenderby.com/index.html",
+		"/Users/john/Developer/johnenderby.com/scripts/app.js",
+		"/Users/john/Developer/johnenderby.com/scripts/app.coffee",
+		"/Users/john/Developer/johnenderby.com/styles/styles.scss",
+		"/Users/john/Developer/johnenderby.com/css/styles.css",
+		"/Users/john/Desktop/project/css/style.css",
+		"/Users/john/Desktop/project/index.html",
+		"/Users/john/Downloads/ic_check_black_12px.svg",
+		"/Users/john/Developer/JavaScript is Sexy/Chapter 1/1.1/coreJavaScript.js",
+		"/Users/john/Library/Application Support/Sublime Text 3/Packages/AdvancedNewFile/Default (OSX).sublime-keymap",
+		"/Users/john/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/john/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/john/Desktop/Material Theme/Material-Theme-Darker.sublime-theme",
+		"/Users/john/Desktop/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+		"/Users/john/Desktop/Material Theme/schemes/Material-Theme.tmTheme",
+		"/Users/john/Dropbox (Personal)/Sublime/Installed Packages/Material Theme.sublime-package",
+		"/Users/john/Dropbox/Works in Progress/twitbucket/index.html",
+		"/Users/john/Library/Application Support/Sublime Text 3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/Users/john/Dropbox (Recipop)/Recipop/PLANNING/John/privacy print style/Privacy Policy.html",
+		"/Users/john/Dropbox (Recipop)/Recipop/PLANNING/John/privacy print style/print.css",
+		"/Users/john/Library/Application Support/Sublime Text 3/Packages/User/CoffeeScript.sublime-settings",
+		"/Users/john/Dropbox/Works in Progress/twitbucket/app.js",
+		"/Users/john/Dropbox/Works in Progress/twitbucket/app-alt.js",
+		"/Users/john/Library/Application Support/Sublime Text 3/Packages/Better CoffeeScript/CoffeeScript.sublime-settings",
+		"/Users/john/Dropbox/Works in Progress/buli/app.js",
+		"/Users/john/Dropbox/Works in Progress/Twit Bucket List.framer/app.js",
+		"/private/etc/sudoers",
+		"/Users/john/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"<li>",
+			"li",
+			">\n",
+			"');\n",
+			"}",
+			"edi",
+			"which_editor",
+			"Theme",
+			"\".",
+			"Gravity",
+			"time: 0.25",
+			"opacity: 0",
+			"    // twitList.animate({\n    //     properties: {\n    //         opacity: 1,\n    //         time: 0.25\n    //     }\n    // });",
+			"    // twitList.animate({\n    //     properties: {\n    //         opacity: 0\n    //     }\n    // });",
+			"    // twitList.animate({\n    //     properties: {\n    //         opacity: 0\n    //     }\n    // });\n});",
+			"’",
+			"‘",
+			"bucket1.on(Events.MouseOver, function(){\n    bucket1.scale = 1.25;\n});\n",
+			"    twitList.animate({\n        properties: {\n            opacity: 0\n        }\n    });",
+			"    twitList.animate({\n        properties: {\n            opacity: 1,\n            time: 0.25\n        }\n    });",
+			"suggestion1",
+			"profile1",
+			"originY1",
+			"originX1",
+			"profile1",
+			"originX1",
+			"profile1",
+			"        suggestion,  ",
+			"profile1",
+			"caret"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 66.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 280.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,7 +1,7 @@
-@charset "UTF-8";
 /* styles.css */
 body {
-  font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgba(2, 18, 137, 0.95); }
 
 h1 {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -10,7 +10,7 @@ h1 {
   color: #ffffff; }
 
 header {
-  background: linear-gradient(rgba(2, 18, 137, 0.95), rgba(2, 18, 137, 0.95)), url("../images/scotland.jpg");
+  background: linear-gradient(rgba(2, 18, 137, 0.95), rgba(2, 18, 137, 0.95)), url("../images/scotland.png");
   background-size: cover;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
@@ -61,5 +61,28 @@ button {
   border-radius: 7px;
   border: none;
   background-color: #80FF97;
-  box-shadow: 0 5px 0   #153D13;
-  margin: 0 5px; }
+  box-shadow: 0 5px 0 #008017;
+  margin: 0 15px;
+  color: rgba(2, 18, 137, 0.95);
+  font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em; }
+  button.secondary {
+    background-color: transparent;
+    border: 1px solid #01ff2f;
+    color: #ffffff; }
+  button:active {
+    box-shadow: none;
+    transform: translateY(5px); }
+  button:visited {
+    box-shadow: none;
+    transform: translateY(5px); }
+
+.when {
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap; }
+  .when h2 {
+    flex: 1 100%; }
+  .when div {
+    display: flex; }
