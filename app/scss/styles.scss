@@ -20,6 +20,13 @@ $title-weight: 200;
     color: $white;
 }
 
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}
+
 body {
     font-family: $body-fonts;
     background-color: $deep-ocean;
@@ -36,11 +43,6 @@ a {
 h1 {
     @include title($display-fonts, $white, $title-size, $title-weight);
     margin: 40px 0;
-}
-
-h2 {
-    @include title($display-fonts, inherit, 1.75em, $title-weight)
-    padding: 10px 15px;
 }
 
 header {
@@ -141,10 +143,11 @@ button,
 
 #mc_embed_signup {
     width: 600px;
-    height: 300px;
+    height: auto;
+    padding-bottom: 25px;
     background-color: $white;
     border-radius: 10px;
-    box-shadow: 0 3px 5px darken($deep-ocean, 75%);
+    box-shadow: 0 5px 15px darken($deep-ocean, 75%);
     #mc_embed_signup_scroll {
         width: 100%;
         color: $deep-ocean;
@@ -152,9 +155,24 @@ button,
     .mailer-subscribe {
         float: left;
     }
+    h2 {
+        @include title($display-fonts, inherit, 1.75em, $title-weight)
+        padding: 20px 0 35px 0;
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
     .indicates-required {
-        float:right;
-        margin: 10px 15px;
+        height: auto;
+        // width: 100%;
+        text-align: right;
+        margin-right: 75px;
+        padding-bottom: 20px;
+        display: block;
+        // ::before {
+        //     content: "";
+        //     clear: both;
+        // }
     }
     .asterisk {
         color: red;
@@ -162,22 +180,37 @@ button,
     .mc-field-group {
         width: 100%;
         margin-bottom: 20px;
-        margin-left: 25px;
-        label {
-            // float: left;
-            width: 500px;
+        // margin-left: 25px;
+        &.initial {
+            padding-top: 25px;
         }
+        label {
+            width: 500px;
+            margin-left: 75px;
+        }
+        
         input {
-            // float: right;
             height: 30px;
-            width: 200px;
+            width: 300px;
             border: 1px solid darken($faded-lime, 33%);
-            border-radius: 10px;
+            border-radius: 5px;
             outline: none;
+            float: right;
+            margin-right: 75px;
+            font-family: $body-fonts;
+            font-size: 1em;
+            text-indent: 10px;
+            color: $orchid;
+        }
+
+        @include placeholder {
+            color: lighten($orchid, 25%);
+            text-indent: 10px;
         }
     }
     .button {
         float: right;
+        margin-right: 75px;
     }
 }
 
