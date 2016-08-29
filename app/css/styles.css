@@ -102,34 +102,42 @@ button,
   width: 600px;
   height: auto;
   padding-bottom: 25px;
-  background-color: #ffffff;
+  background-color: #0D2746;
   border-radius: 10px;
-  box-shadow: 0 5px 15px black; }
+  box-shadow: 0 5px 15px black;
+  overflow: hidden; }
   #mc_embed_signup #mc_embed_signup_scroll {
     width: 100%;
     color: #0D2746; }
   #mc_embed_signup .mailer-subscribe {
     float: left; }
-  #mc_embed_signup h2 {
-    font-family: "GothamRounded-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.75em;
-    font-weight: 200;
-    color: inherit;
-    padding: 20px 0 35px 0;
-    width: 100%;
-    text-align: center;
-    display: block; }
+  #mc_embed_signup .signup-header {
+    background-color: #D966E1;
+    height: 70px;
+    width: 100%; }
+    #mc_embed_signup .signup-header h2 {
+      font-family: "GothamRounded-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 1.75em;
+      font-weight: 200;
+      color: inherit;
+      padding: 20px 0 35px 0;
+      width: 100%;
+      color: #ffffff;
+      text-align: center;
+      display: block; }
   #mc_embed_signup .indicates-required {
     height: auto;
     text-align: right;
     margin-right: 75px;
     padding-bottom: 20px;
-    display: block; }
+    display: block;
+    color: #ffffff; }
   #mc_embed_signup .asterisk {
     color: red; }
   #mc_embed_signup .mc-field-group {
     width: 100%;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    color: #ffffff; }
     #mc_embed_signup .mc-field-group.initial {
       padding-top: 25px; }
     #mc_embed_signup .mc-field-group label {
@@ -138,7 +146,7 @@ button,
     #mc_embed_signup .mc-field-group input {
       height: 30px;
       width: 300px;
-      border: 1px solid #00d727;
+      border: none;
       border-radius: 5px;
       outline: none;
       float: right;
