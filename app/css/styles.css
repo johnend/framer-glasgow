@@ -1,23 +1,40 @@
 /* styles.css */
 body {
-  font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: rgba(2, 18, 137, 0.95); }
+  font-family: "GothamRounded-Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #0D2746;
+  color: #80FF97;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.75em; }
+
+a {
+  color: #D966E1; }
 
 h1 {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "GothamRounded-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 3em;
   font-weight: 200;
-  color: #ffffff; }
+  color: #ffffff;
+  margin: 40px 0; }
+
+h2 {
+  font-family: "GothamRounded-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.75em;
+  font-weight: 200;
+  color: inherit;
+  padding: 10px 15px; }
 
 header {
-  background: linear-gradient(rgba(2, 18, 137, 0.95), rgba(2, 18, 137, 0.95)), url("../images/scotland.png");
+  background: linear-gradient(#0D2746, #0D2746), url("../images/scotland.png");
   background-size: cover;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "GothamRounded-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-bottom: 75px; }
 
 nav > ul {
   display: flex;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  flex-flow: row wrap; }
 
 nav > ul > li {
   list-style: none;
@@ -40,22 +57,30 @@ nav > ul > li {
   justify-content: center; }
 
 .hero {
-  height: 500px; }
+  height: auto; }
 
-.logo, h1 {
+.splash, h1 {
   flex: 1 100%;
   display: flex;
+  flex-flow: column;
+  align-items: center;
   justify-content: center; }
 
 .info-buttons {
-  flex: 1 100%; }
+  flex: 1 100%;
+  margin-bottom: 50px; }
 
-.logo > object {
-  width: 150px;
-  height: 150px;
-  margin-top: 100px; }
+.splash {
+  margin-top: 70px; }
+  .splash .logo {
+    width: 185px; }
+  .splash .title {
+    width: 500px;
+    height: 150px;
+    margin: 70px 0; }
 
-button {
+button,
+.button {
   height: 45px;
   width: 200px;
   border-radius: 7px;
@@ -63,26 +88,57 @@ button {
   background-color: #80FF97;
   box-shadow: 0 5px 0 #008017;
   margin: 0 15px;
-  color: rgba(2, 18, 137, 0.95);
-  font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #0D2746;
+  font-family: "GothamRounded-Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em; }
-  button.secondary {
+  button.secondary,
+  .button.secondary {
     background-color: transparent;
     border: 1px solid #01ff2f;
     color: #ffffff; }
-  button:active {
+  button:active,
+  .button:active {
     box-shadow: none;
     transform: translateY(5px); }
-  button:visited {
+  button:visited,
+  .button:visited {
     box-shadow: none;
     transform: translateY(5px); }
 
-.when {
-  background: #ffffff;
+#mc_embed_signup {
+  width: 600px;
+  height: 300px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px black; }
+  #mc_embed_signup #mc_embed_signup_scroll {
+    width: 100%;
+    color: #0D2746; }
+  #mc_embed_signup .mailer-subscribe {
+    float: left; }
+  #mc_embed_signup .indicates-required {
+    float: right;
+    margin: 10px 15px; }
+  #mc_embed_signup .asterisk {
+    color: red; }
+  #mc_embed_signup .mc-field-group {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 25px; }
+    #mc_embed_signup .mc-field-group label {
+      width: 500px; }
+    #mc_embed_signup .mc-field-group input {
+      height: 30px;
+      width: 200px;
+      border: 1px solid #00d727;
+      border-radius: 10px;
+      outline: none; }
+  #mc_embed_signup .button {
+    float: right; }
+
+.what {
   display: flex;
-  flex-direction: row;
-  flex-flow: row wrap; }
-  .when h2 {
-    flex: 1 100%; }
-  .when div {
-    display: flex; }
+  justify-content: center;
+  text-align: center; }
+  .what div {
+    width: 35%; }

@@ -1,37 +1,81 @@
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Framer Glasgow Meetup</title>
+    <!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> -->
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/print.css">
 </head>
+
 <body>
     <header>
-        <nav class="main">
+        <!--         <nav class="main">
             <ul>
                 <li class="menu-item"><a href="" title="">What is Framer?</a></li>
                 <li class="menu-item"><a href="" title="">When</a></li>
                 <li class="menu-item"><a href="" title="">Where</a></li>
                 <li class="menu-item"><a href="" title="">Contact</a></li>
             </ul>
-        </nav>
+        </nav> -->
         <section class="hero">
-            <div class="logo">
-                <object data="images/logo.svg" type="image/svg+xml">
-                    <img src="images/logo.png" alt="Framer Scotland Logo">
+            <div class="splash">
+                <object data="images/logo.svg" type="image/svg+xml" class="logo">
+                    <img src="images/logo.png" alt="Framer Scotland Logo" class="logo">
+                </object>
+                <object data="images/title.svg" type="image/svg+xml" class="title">
+                    <h1>Framer Scotland</h1>
+                    <img src="images/title.png" alt="Framer Scotland Logo" class="title">
                 </object>
             </div>
-            <h1>Framer Scotland</h1>
             <div class="info-buttons">
-                <button class="secondary">Something</button>
-                <button class="primary">Something Else</button>
+                <button class="secondary">Get in touch</button>
+                <button class="primary">Sign Me Up!</button>
             </div>
+            <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup">
+                <form action="//johnenderby.us8.list-manage.com/subscribe/post?u=ce83e0e7aa0e416f9e4e5b29d&amp;id=5321d8a39f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <h2 class="mailer-subscribe">Subscribe to our mailing list</h2>
+                        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                        <div class="mc-field-group">
+                            <label for="mce-FNAME">First Name <span class="asterisk">*</span>
+                            </label>
+                            <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-LNAME">Last Name <span class="asterisk">*</span></label>
+                            <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                            </label>
+                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                        </div>
+
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                            <input type="text" name="b_ce83e0e7aa0e416f9e4e5b29d_5321d8a39f" tabindex="-1" value="">
+                        </div>
+                        <div class="clear">
+                            <input type="submit" value="Subscribe" name="subscribe" class="button">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--End mc_embed_signup-->
         </section>
     </header>
-    <section class="when">
-        <h2>What is Framer?</h2>
-        <div><p><a href="framerjs.com">Framer</a> is <em>the</em> code-based prototyping tool in use today. As the fields of UX, UI and interaction design grow more and more prototyping tools are being developed. Many of these tools, such as Invision or Marvel, are better for flows and prototyping user progression through an app and come with a minimal learning curve. Framer on the other hand is a little more difficult to get to grips with initially, especially if you haven't done any front end development before.</p>
-                <p>The beauty of Framer though is that once you are reasonably familiar with coding your prototypes in CoffeeScript the world is your oyster! Almost anything you can imagine is possible with Framer!</p></div>
+    <section class="what">
+        <div>
+            <p>Framer Scotland is a monthly meetup for like-minded individuals to come together, talk about their experience with <a href="#">Framer.js</a> and <a href="#">Framer Studio</a>, learn something new and have a good time doing it.</p>
+            <p>We will be meeting regularly on the first Thursday of every month, beginning in October, at a venue which is as yet a mystery. If you're interested in coming along, whether you are a seasoned prototyping professional, or a newbie looking to level up your skills fill in some information at the bottom of this page and we will be in touch.</p>
+        </div>
     </section>
+
 </html>
