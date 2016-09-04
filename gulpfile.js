@@ -34,7 +34,7 @@ gulp.task('coffee', function () {
     gulp.src('app/coffee/*.coffee')
         .pipe(coffee({bare:true}))
             // .on('error', gutil.log))
-        .pipe(gulp.dest('app/js'));
+        .pipe(gulp.dest('../app/js'));
 });
 
 gulp.task('useref', function () {
