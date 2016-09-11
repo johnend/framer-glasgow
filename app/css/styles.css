@@ -7,6 +7,12 @@ body {
   font-weight: 400;
   line-height: 1.75em; }
 
+button,
+.button,
+a,
+.close-button {
+  cursor: pointer; }
+
 a {
   color: #D966E1; }
 
@@ -21,9 +27,17 @@ p {
   margin-top: 25px; }
 
 header {
-  background: linear-gradient(#0D2746, #0D2746), url("../images/scotland.png");
-  background-size: cover;
   font-family: "GothamRounded-Light", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  header .window {
+    position: absolute;
+    z-index: -10;
+    top: 12vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0.3;
+    min-width: 150px;
+    max-width: 500px; }
 
 nav > ul {
   display: flex;
@@ -45,7 +59,8 @@ nav > ul > li {
   .menu-item > a.active {
     color: #636363; }
 
-.hero, .info-buttons {
+.hero,
+.info-buttons {
   display: flex;
   flex-direction: row;
   flex-flow: row wrap;
@@ -54,7 +69,8 @@ nav > ul > li {
 .hero {
   height: auto; }
 
-.splash, h1 {
+.splash,
+h1 {
   flex: 1 100%;
   display: flex;
   flex-flow: column;
@@ -68,10 +84,9 @@ nav > ul > li {
 .splash {
   margin-top: 70px; }
   .splash .logo {
-    width: 185px; }
+    max-width: 185px; }
   .splash .title {
-    width: 500px;
-    height: 150px;
+    max-width: 700px;
     margin: 70px 0; }
 
 button,
@@ -81,7 +96,7 @@ button,
   border-radius: 7px;
   border: none;
   background-color: #80FF97;
-  box-shadow: 0 5px 0 #008017;
+  box-shadow: 0 5px 0 #00801D;
   margin: 0 15px;
   color: #0D2746;
   font-family: "GothamRounded-Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -130,7 +145,7 @@ button,
   position: absolute;
   visibility: hidden;
   top: 35vh;
-  left: -2000;
+  left: -5000;
   right: 0;
   margin: auto;
   z-index: 10; }
@@ -204,4 +219,25 @@ main {
   justify-content: center;
   text-align: center; }
   main div {
-    width: 35%; }
+    width: 50%; }
+
+@media screen and (max-width: 745px) {
+  .splash {
+    margin-top: 70px; }
+    .splash .logo {
+      width: 150px; }
+    .splash .title {
+      min-width: 350px;
+      margin: 70px 30px; }
+  main div {
+    width: 90%; } }
+
+@media screen and (max-width: 500px) {
+  header .window {
+    margin: 0 15px; } }
+
+@media screen and (max-width: 459px) {
+  .primary {
+    margin-top: 15px; }
+  .splash .title {
+    margin: 30px; } }

@@ -23,7 +23,7 @@ gulp.task('sass', function(){
 gulp.task('browserSync', function () {
     
     browserSync.init({
-        browser: ["blisk", "safari"],
+        browser: ["chrome", "safari"],
         server: {
             baseDir: 'app'
         }
