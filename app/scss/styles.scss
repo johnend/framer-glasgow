@@ -1,60 +1,57 @@
-/* styles.css */
+// styles.css
 
-$white: #ffffff;
+$white: #fff;
 $grey: #636363;
-$orchid: #D966E1;
-$faded-lime: #80FF97;
-$green: #00801D;
-$blue-zodiac: #0D2746;
+$orchid: #d966e1;
+$faded-lime: #80ff97;
+$green: #00801d;
+$blue-zodiac: #0d2746;
+$red: #f00;
 $transparent: rgba(0, 0, 0, 0);
-$body-fonts: 'GothamRounded-Book',
-'Helvetica Neue',
-Helvetica,
-Arial,
-sans-serif;
-$display-fonts: 'GothamRounded-Light',
-'Helvetica Neue',
-Helvetica,
-Arial,
-sans-serif;
+$body-fonts: 'GothamRounded-Book', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$display-fonts: 'GothamRounded-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $title-size: 3em;
 $title-weight: 200;
+
 @mixin title($display-fonts, $white, $title-size, $title-weight) {
-    font-family: $display-fonts;
-    font-size: $title-size;
-    font-weight: $title-weight;
-    color: $white;
+  font-family: $display-fonts;
+  font-size: $title-size;
+  font-weight: $title-weight;
+  color: $white;
 }
 
 @mixin placeholder {
-    ::-webkit-input-placeholder {
-        @content
-    }
-    :-moz-placeholder {
-        @content
-    }
-    ::-moz-placeholder {
-        @content
-    }
-    :-ms-input-placeholder {
-        @content
-    }
+  ::-webkit-input-placeholder {
+    @content
+  }
+
+  ::-moz-placeholder {
+    @content
+  }
+
+  ::-moz-placeholder {
+    @content
+  }
+
+  :-ms-input-placeholder {
+    @content
+  }
 }
 
 body {
-    font-family: $body-fonts;
-    background-color: $blue-zodiac;
-    color: $faded-lime;
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.75em;
+  background-color: $blue-zodiac;
+  color: $faded-lime;
+  font-family: $body-fonts;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.75em;
 }
 
 button,
 .button,
 a,
 .close-button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 a {
@@ -62,259 +59,268 @@ a {
 }
 
 h1 {
-    @include title($display-fonts, $white, $title-size, $title-weight);
-    margin: 40px 0;
+  @include title($display-fonts, $white, $title-size, $title-weight);
+  margin: 40px 0;
 }
 
 p {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 header {
-    font-family: $display-fonts;
-    .window {
-        position: absolute;
-        z-index: -10;
-        top: 12vh;
-        left: 0;
-        right: 0;
-        margin: auto;
-        opacity: 0.3;
-        min-width: 150px;
-        max-width: 500px;
-    }
+  font-family: $display-fonts;
+
+  .window {
+    left: 0;
+    margin: auto;
+    max-width: 500px;
+    min-width: 150px;
+    opacity: .3;
+    position: absolute;
+    right: 0;
+    top: 12vh;
+    z-index: -10;
+  }
 }
 
 nav > ul {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-flow: row wrap;
-}
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
 
-nav > ul > li {
+  li {
     list-style: none;
-    text-decoration: none;
     padding: 25px 15px;
-    width: 125px;
-}
-
-.menu-item > a {
     text-decoration: none;
-    color: white;
-    &:hover {
-        color: $faded-lime;
-    }
-    &.active {
-        //this needs additional js to work
-        color: $grey;
-    }
+    width: 125px;
+  }
 }
 
 .hero,
 .info-buttons {
-    display: flex;
-    flex-direction: row;
-    flex-flow: row wrap;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .hero {
-    height: auto;
+  height: auto;
 }
 
 .splash,
 h1 {
-    flex: 1 100%;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  display: flex;
+  flex: 1 100%;
+  flex-flow: column;
+  justify-content: center;
 }
 
 .info-buttons {
-    flex: 1 100%;
-    margin-bottom: 50px;
+  flex: 1 100%;
+  margin-bottom: 50px;
 }
 
 .splash {
-    margin-top: 70px;
-    .logo {
-        max-width: 185px;
-    }
-    .title {
-        max-width: 700px;
-        margin: 70px 0;
-    }
+  margin-top: 70px;
+
+  .logo {
+    max-width: 185px;
+  }
+
+  .title {
+    margin: 70px 0;
+    max-width: 700px;
+  }
 }
 
 button,
 .button {
-    height: 45px;
-    width: 200px;
-    border-radius: 7px;
-    border: none;
-    background-color: $faded-lime;
-    box-shadow: 0 5px 0 $green;
-    margin: 0 15px;
-    color: $blue-zodiac;
-    font-family: $body-fonts;
-    font-size: 1em;
-    &.secondary {
-        background-color: $transparent;
-        border: 1px solid darken($faded-lime, 10%);
-        color: $white;
-    }
-    &:active {
-        box-shadow: none;
-        transform: translateY(5px);
-    }
-    &:visited {
-        box-shadow: none;
-        transform: translateY(5px);
-    }
+  background-color: $faded-lime;
+  border: 0;
+  border-radius: 7px;
+  box-shadow: 0 5px 0 $green;
+  color: $blue-zodiac;
+  font-family: $body-fonts;
+  font-size: 1em;
+  height: 45px;
+  margin: 0 15px;
+  width: 200px;
+
+  &.secondary {
+    background-color: $transparent;
+    border: 1px solid darken($faded-lime, 10%);
+    color: $white;
+  }
+
+  &:active {
+    box-shadow: none;
+    transform: translateY(5px);
+  }
+
+  &:visited {
+    box-shadow: none;
+    transform: translateY(5px);
+  }
 }
 
 .overlay {
-    background-color: $blue-zodiac;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0.75;
-    z-index: 0;
-    visibility: hidden;
-    height: 100vh;
-    width: 100%;
-    .close-button {
-        position: absolute;
-        top: 30px;
-        right: 30px;
-        height: 30px;
-        width: 30px;
-    }
+  background-color: $blue-zodiac;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  opacity: .75;
+  position: absolute;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+  z-index: 0;
+
+  .close-button {
+    height: 30px;
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    width: 30px;
+  }
 }
 
 #mc_embed_signup {
-    width: 600px;
+  background-color: $blue-zodiac;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px darken($blue-zodiac, 75%);
+  height: auto;
+  left: -5000;
+  margin: auto;
+  overflow: hidden;
+  padding-bottom: 25px;
+  position: absolute;
+  right: 0;
+  top: 35vh;
+  visibility: hidden;
+  width: 600px;
+  z-index: 10;
+  #mc_embed_signup_scroll {
+    color: $blue-zodiac;
+    width: 100%;
+  }
+
+  .mailer-subscribe {
+    float: left;
+  }
+
+  .signup-header {
+    background-color: $orchid;
+    height: 70px;
+    width: 100%;
+
+    h2 {
+      @include title($display-fonts, inherit, 1.75em, $title-weight);
+      color: $white;
+      display: block;
+      padding: 20px 0 35px;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  .indicates-required {
+    color: $white;
+    display: block;
     height: auto;
-    padding-bottom: 25px;
-    background-color: $blue-zodiac;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px darken($blue-zodiac, 75%);
-    overflow: hidden;
-    position: absolute;
-    visibility: hidden;
-    top: 35vh;
-    left: -5000;
-    right: 0;
-    margin: auto;
-    z-index: 10;
-    #mc_embed_signup_scroll {
-        width: 100%;
-        color: $blue-zodiac;
+    margin-right: 75px;
+    padding-bottom: 20px;
+    text-align: right;
+  }
+
+  .asterisk {
+    color: $red;
+  }
+
+  .mc-field-group {
+    color: $white;
+    margin-bottom: 20px;
+    width: 100%;
+
+    @include placeholder {
+      color: lighten($orchid, 25%);
+      text-indent: 10px;
     }
-    .mailer-subscribe {
-        float: left;
+
+    &.initial {
+      padding-top: 25px;
     }
-    .signup-header {
-        background-color: $orchid;
-        height: 70px;
-        width: 100%;
-        h2 {
-            @include title($display-fonts, inherit, 1.75em, $title-weight) padding: 20px 0 35px 0;
-            width: 100%;
-            color: $white;
-            text-align: center;
-            display: block;
-        }
+
+    label {
+      margin-left: 75px;
+      width: 500px;
     }
-    .indicates-required {
-        height: auto;
-        text-align: right;
-        margin-right: 75px;
-        padding-bottom: 20px;
-        display: block;
-        color: $white;
+
+    input {
+      border: 0;
+      border-radius: 5px;
+      color: $orchid;
+      float: right;
+      font-family: $body-fonts;
+      font-size: 1em;
+      height: 30px;
+      margin-right: 75px;
+      outline: none;
+      text-indent: 10px;
+      width: 300px;
     }
-    .asterisk {
-        color: red;
-    }
-    .mc-field-group {
-        width: 100%;
-        margin-bottom: 20px;
-        color: $white;
-        &.initial {
-            padding-top: 25px;
-        }
-        label {
-            width: 500px;
-            margin-left: 75px;
-        }
-        input {
-            height: 30px;
-            width: 300px;
-            border: none;
-            border-radius: 5px;
-            outline: none;
-            float: right;
-            margin-right: 75px;
-            font-family: $body-fonts;
-            font-size: 1em;
-            text-indent: 10px;
-            color: $orchid;
-        }
-        @include placeholder {
-            color: lighten($orchid, 25%);
-            text-indent: 10px;
-        }
-    }
-    .button {
-        float: right;
-        margin-right: 75px;
-    }
+  }
+
+  .button {
+    float: right;
+    margin-right: 75px;
+  }
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    div {
-        width: 50%;
-    }
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  div {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 745px) {
-    .splash {
-        margin-top: 70px;
-        .logo {
-            width: 150px;
-        }
-        .title {
-            min-width: 350px;
-            margin: 70px 30px;
-        }
+  .splash {
+    margin-top: 70px;
+
+    .logo {
+      width: 150px;
     }
 
-    main div {
-        width: 90%;
+    .title {
+      margin: 70px 30px;
+      min-width: 350px;
     }
+  }
+
+  main div {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    header .window {
-        margin: 0 15px;
-    }
+  header .window {
+    margin: 0 15px;
+  }
 }
 
 @media screen and (max-width: 459px) {
-    .primary {
-        margin-top: 15px;
-    }
+  .primary {
+    margin-top: 15px;
+  }
 
-    .splash .title {
-        margin: 30px;
-    }
-
+  .splash .title {
+    margin: 30px;
+  }
 }
