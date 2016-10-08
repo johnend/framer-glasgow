@@ -1,8 +1,7 @@
-/* styles.css */
 body {
+  background-color: #0d2746;
+  color: #80ff97;
   font-family: "GothamRounded-Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #0D2746;
-  color: #80FF97;
   font-size: 1em;
   font-weight: 400;
   line-height: 1.75em; }
@@ -14,13 +13,13 @@ a,
   cursor: pointer; }
 
 a {
-  color: #D966E1; }
+  color: #d966e1; }
 
 h1 {
   font-family: "GothamRounded-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 3em;
   font-weight: 200;
-  color: #ffffff;
+  color: #fff;
   margin: 40px 0; }
 
 p {
@@ -29,35 +28,26 @@ p {
 header {
   font-family: "GothamRounded-Light", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   header .window {
-    position: absolute;
-    z-index: -10;
-    top: 12vh;
     left: 0;
-    right: 0;
     margin: auto;
-    opacity: 0.3;
+    max-width: 500px;
     min-width: 150px;
-    max-width: 500px; }
+    opacity: .3;
+    position: absolute;
+    right: 0;
+    top: 12vh;
+    z-index: -10; }
 
 nav > ul {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
-  text-align: center;
-  flex-flow: row wrap; }
-
-nav > ul > li {
-  list-style: none;
-  text-decoration: none;
-  padding: 25px 15px;
-  width: 125px; }
-
-.menu-item > a {
-  text-decoration: none;
-  color: white; }
-  .menu-item > a:hover {
-    color: #80FF97; }
-  .menu-item > a.active {
-    color: #636363; }
+  text-align: center; }
+  nav > ul li {
+    list-style: none;
+    padding: 25px 15px;
+    text-decoration: none;
+    width: 125px; }
 
 .hero,
 .info-buttons {
@@ -71,10 +61,10 @@ nav > ul > li {
 
 .splash,
 h1 {
-  flex: 1 100%;
-  display: flex;
-  flex-flow: column;
   align-items: center;
+  display: flex;
+  flex: 1 100%;
+  flex-flow: column;
   justify-content: center; }
 
 .info-buttons {
@@ -86,26 +76,26 @@ h1 {
   .splash .logo {
     max-width: 185px; }
   .splash .title {
-    max-width: 700px;
-    margin: 70px 0; }
+    margin: 70px 0;
+    max-width: 700px; }
 
 button,
 .button {
-  height: 45px;
-  width: 200px;
+  background-color: #80ff97;
+  border: 0;
   border-radius: 7px;
-  border: none;
-  background-color: #80FF97;
-  box-shadow: 0 5px 0 #00801D;
-  margin: 0 15px;
-  color: #0D2746;
+  box-shadow: 0 5px 0 #00801d;
+  color: #0d2746;
   font-family: "GothamRounded-Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em; }
+  font-size: 1em;
+  height: 45px;
+  margin: 0 15px;
+  width: 200px; }
   button.secondary,
   .button.secondary {
     background-color: transparent;
     border: 1px solid #4dff6d;
-    color: #ffffff; }
+    color: #fff; }
   button:active,
   .button:active {
     box-shadow: none;
@@ -116,46 +106,46 @@ button,
     transform: translateY(5px); }
 
 .overlay {
-  background-color: #0D2746;
-  position: absolute;
-  top: 0;
+  background-color: #0d2746;
   bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.75;
-  z-index: 0;
-  visibility: hidden;
   height: 100vh;
-  width: 100%; }
+  left: 0;
+  opacity: .75;
+  position: absolute;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+  z-index: 0; }
   .overlay .close-button {
-    position: fixed;
-    top: 30px;
-    right: 30px;
     height: 30px;
+    position: fixed;
+    right: 30px;
+    top: 30px;
     width: 30px; }
 
 #mc_embed_signup {
-  width: 600px;
-  height: auto;
-  padding-bottom: 25px;
-  background-color: #0D2746;
+  background-color: #0d2746;
   border-radius: 10px;
   box-shadow: 0 5px 15px black;
-  overflow: hidden;
-  position: absolute;
-  visibility: hidden;
-  top: 35vh;
+  height: auto;
   left: -5000;
-  right: 0;
   margin: auto;
+  overflow: hidden;
+  padding-bottom: 25px;
+  position: absolute;
+  right: 0;
+  top: 35vh;
+  visibility: hidden;
+  width: 600px;
   z-index: 10; }
   #mc_embed_signup #mc_embed_signup_scroll {
-    width: 100%;
-    color: #0D2746; }
+    color: #0d2746;
+    width: 100%; }
   #mc_embed_signup .mailer-subscribe {
     float: left; }
   #mc_embed_signup .signup-header {
-    background-color: #D966E1;
+    background-color: #d966e1;
     height: 70px;
     width: 100%; }
     #mc_embed_signup .signup-header h2 {
@@ -163,45 +153,28 @@ button,
       font-size: 1.75em;
       font-weight: 200;
       color: inherit;
-      padding: 20px 0 35px 0;
-      width: 100%;
-      color: #ffffff;
+      color: #fff;
+      display: block;
+      padding: 20px 0 35px;
       text-align: center;
-      display: block; }
+      width: 100%; }
   #mc_embed_signup .indicates-required {
+    color: #fff;
+    display: block;
     height: auto;
-    text-align: right;
     margin-right: 75px;
     padding-bottom: 20px;
-    display: block;
-    color: #ffffff; }
+    text-align: right; }
   #mc_embed_signup .asterisk {
-    color: red; }
+    color: #f00; }
   #mc_embed_signup .mc-field-group {
-    width: 100%;
+    color: #fff;
     margin-bottom: 20px;
-    color: #ffffff; }
-    #mc_embed_signup .mc-field-group.initial {
-      padding-top: 25px; }
-    #mc_embed_signup .mc-field-group label {
-      width: 500px;
-      margin-left: 75px; }
-    #mc_embed_signup .mc-field-group input {
-      height: 30px;
-      width: 300px;
-      border: none;
-      border-radius: 5px;
-      outline: none;
-      float: right;
-      margin-right: 75px;
-      font-family: "GothamRounded-Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 1em;
-      text-indent: 10px;
-      color: #D966E1; }
+    width: 100%; }
     #mc_embed_signup .mc-field-group ::-webkit-input-placeholder {
       color: #f3d1f6;
       text-indent: 10px; }
-    #mc_embed_signup .mc-field-group :-moz-placeholder {
+    #mc_embed_signup .mc-field-group ::-moz-placeholder {
       color: #f3d1f6;
       text-indent: 10px; }
     #mc_embed_signup .mc-field-group ::-moz-placeholder {
@@ -210,6 +183,23 @@ button,
     #mc_embed_signup .mc-field-group :-ms-input-placeholder {
       color: #f3d1f6;
       text-indent: 10px; }
+    #mc_embed_signup .mc-field-group.initial {
+      padding-top: 25px; }
+    #mc_embed_signup .mc-field-group label {
+      margin-left: 75px;
+      width: 500px; }
+    #mc_embed_signup .mc-field-group input {
+      border: 0;
+      border-radius: 5px;
+      color: #d966e1;
+      float: right;
+      font-family: "GothamRounded-Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 1em;
+      height: 30px;
+      margin-right: 75px;
+      outline: none;
+      text-indent: 10px;
+      width: 300px; }
   #mc_embed_signup .button {
     float: right;
     margin-right: 75px; }
@@ -227,8 +217,8 @@ main {
     .splash .logo {
       width: 150px; }
     .splash .title {
-      min-width: 350px;
-      margin: 70px 30px; }
+      margin: 70px 30px;
+      min-width: 350px; }
   main div {
     width: 90%; } }
 
